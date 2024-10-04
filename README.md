@@ -1,6 +1,3 @@
-
----
-
 # Prudencia - Expense Tracker
 
 **Prudencia** is a comprehensive financial management application built with Next.js. It helps users track their expenses, manage budgets, and gain insights into their financial habits through AI-powered analytics.
@@ -54,6 +51,7 @@
 
 4. Set up environment variables:
    - Create a `.env.local` file in the root directory and add the following:
+     
      ```bash
      NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=your_clerk_publishable_key
      CLERK_SECRET_KEY=your_clerk_secret_key
@@ -64,6 +62,7 @@
      ```
 
 5. Run the development server:
+   
    ```bash
    npm run dev
    # or
