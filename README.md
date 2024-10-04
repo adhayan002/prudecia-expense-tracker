@@ -32,44 +32,49 @@ Expense Tracker is a comprehensive financial management application built with N
 ### Installation
 
 1. Clone the repository:
-   ```
    git clone https://github.com/yourusername/expense-tracker.git
+   ```
+   
    ```
 
 2. Navigate to the project directory:
-   ```
    cd expense-tracker
+   ```
+   
    ```
 
 3. Install dependencies:
+      npm install
+      # or
+      yarn install
+      # or
+      bun install
    ```
-   npm install
-   # or
-   yarn install
-   # or
-   bun install
+   
    ```
 
 4. Set up environment variables:
    Create a `.env.local` file in the root directory and add the following:
+      NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=your_clerk_publishable_key
+      CLERK_SECRET_KEY=your_clerk_secret_key
+      NEXT_PUBLIC_CLERK_SIGN_IN_URL=/sign-in
+      NEXT_PUBLIC_CLERK_SIGN_UP_URL=/sign-up
+      NEXT_PUBLIC_GEMINI_API_KEY=your_gemini_api_key
+      NEXT_PUBLIC_DB=your_database_url
    ```
-   NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=your_clerk_publishable_key
-   CLERK_SECRET_KEY=your_clerk_secret_key
-   NEXT_PUBLIC_CLERK_SIGN_IN_URL=/sign-in
-   NEXT_PUBLIC_CLERK_SIGN_UP_URL=/sign-up
-   NEXT_PUBLIC_GEMINI_API_KEY=your_gemini_api_key
-   NEXT_PUBLIC_DB=your_database_url
+   
    ```
 
 5. Run the development server:
+      npm run dev
+      # or
+      yarn dev
+      # or
+      pnpm dev
+      # or
+      bun dev
    ```
-   npm run dev
-   # or
-   yarn dev
-   # or
-   pnpm dev
-   # or
-   bun dev
+  
    ```
 
 6. Open [http://localhost:3000](http://localhost:3000) in your browser to see the application.
