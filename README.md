@@ -1,100 +1,114 @@
-```markdown
-# Prudencia
+Here's a structured and properly formatted version of your README for **Prudencia**, following the best practices for a GitHub README:
 
-Expense Tracker is a comprehensive financial management application built with Next.js, designed to help users track their expenses, manage budgets, and gain insights into their financial habits.
+---
+
+# Prudencia - Expense Tracker
+
+**Prudencia** is a comprehensive financial management application built with Next.js. It helps users track their expenses, manage budgets, and gain insights into their financial habits through AI-powered analytics.
 
 ## Features
 
-- **Dashboard Overview**: Visual summary of financial status
-- **Budget Management**: Create, edit, and track budgets
-- **Income Tracking**: Record and categorize income sources
-- **Expense Logging**: Add and categorize expenses
-- **Financial Insights**: AI-powered advice based on spending patterns
-- **Responsive Design**: Optimized for desktop and mobile devices
-- **Authentication**: Secure sign-up and sign-in functionality
+- **Dashboard Overview**: Get a visual summary of your financial status.
+- **Budget Management**: Create, edit, and track budgets seamlessly.
+- **Income Tracking**: Record and categorize different income sources.
+- **Expense Logging**: Add, edit, and categorize expenses.
+- **Financial Insights**: Receive AI-driven advice based on spending patterns.
+- **Responsive Design**: Optimized for both desktop and mobile devices.
+- **Authentication**: Secure sign-up and sign-in functionality.
 
 ## Tech Stack
 
-- **Frontend**: Next.js, React
-- **Styling**: Tailwind CSS
-- **Database**: PostgreSQL (via Neon)
-- **ORM**: Drizzle ORM
-- **Authentication**: Clerk
-- **AI Integration**: Google Generative AI (Gemini)
+- **Frontend**: [Next.js](https://nextjs.org/), [React](https://reactjs.org/)
+- **Styling**: [Tailwind CSS](https://tailwindcss.com/)
+- **Database**: [PostgreSQL](https://www.postgresql.org/) (via [Neon](https://neon.tech/))
+- **ORM**: [Drizzle ORM](https://orm.drizzle.team/)
+- **Authentication**: [Clerk](https://clerk.dev/)
+- **AI Integration**: [Google Generative AI (Gemini)](https://cloud.google.com/ai/generative-ai)
 
 ## Getting Started
 
 ### Prerequisites
 
-- Node.js (v14 or later)
-- npm or Yarn or Bun
+- **Node.js** (v14 or later)
+- **npm**, **Yarn**, or **Bun**
 
 ### Installation
 
 1. Clone the repository:
-   git clone (https://github.com/adhayan002/prudecia-expense-tracker)
+   ```bash
+   git clone https://github.com/adhayan002/prudencia-expense-tracker
+   ```
 
 2. Navigate to the project directory:
-   cd expense-tracker
+   ```bash
+   cd prudencia-expense-tracker
+   ```
 
 3. Install dependencies:
-      npm install
-      # or
-      yarn install
-      # or
-      bun install
+   ```bash
+   npm install
+   # or
+   yarn install
+   # or
+   bun install
+   ```
 
 4. Set up environment variables:
-   Create a `.env.local` file in the root directory and add the following:
-      NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=your_clerk_publishable_key
-      CLERK_SECRET_KEY=your_clerk_secret_key
-      NEXT_PUBLIC_CLERK_SIGN_IN_URL=/sign-in
-      NEXT_PUBLIC_CLERK_SIGN_UP_URL=/sign-up
-      NEXT_PUBLIC_GEMINI_API_KEY=your_gemini_api_key
-      NEXT_PUBLIC_DB=your_database_url
+   - Create a `.env.local` file in the root directory and add the following:
+     ```bash
+     NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=your_clerk_publishable_key
+     CLERK_SECRET_KEY=your_clerk_secret_key
+     NEXT_PUBLIC_CLERK_SIGN_IN_URL=/sign-in
+     NEXT_PUBLIC_CLERK_SIGN_UP_URL=/sign-up
+     NEXT_PUBLIC_GEMINI_API_KEY=your_gemini_api_key
+     NEXT_PUBLIC_DB=your_database_url
+     ```
 
 5. Run the development server:
-      npm run dev
-      # or
-      yarn dev
-      # or
-      pnpm dev
-      # or
-      bun dev
+   ```bash
+   npm run dev
+   # or
+   yarn dev
+   # or
+   bun dev
+   ```
 
-6. Open [http://localhost:3000](http://localhost:3000) in your browser to see the application.
+6. Open [http://localhost:3000](http://localhost:3000) in your browser to view the application.
 
 ## Project Structure
 
-The project follows a structured layout:
-
-- `src/app`: Contains the main application pages and routes
-- `src/components`: Reusable UI components
-- `src/lib`: Utility functions
-- `utils`: Database schema and configuration
+```bash
+prudencia-expense-tracker/
+├── src/
+│   ├── app/            # Application pages and routes
+│   ├── components/     # Reusable UI components
+│   ├── lib/            # Utility functions
+│   └── utils/          # Database schema and configuration
+└── README.md           # Project documentation
+```
 
 ## Key Components
 
-- `Dashboard`: Main overview of user's financial status
-- `BudgetList`: Manages and displays user budgets
-- `IncomeList`: Tracks and shows income sources
-- `ExpenseListTable`: Lists and manages expenses
+- **Dashboard**: Main overview of the user's financial status.
+- **BudgetList**: Manages and displays user budgets.
+- **IncomeList**: Tracks and shows income sources.
+- **ExpenseListTable**: Lists and manages expenses.
 
 ## Contributing
 
-Contributions are welcome! Please feel free to submit a Pull Request.
+Contributions are welcome! If you'd like to contribute, please submit a Pull Request or open an issue on GitHub.
 
 ## License
 
-This project is open source and available under the [MIT License](LICENSE).
+This project is licensed under the [MIT License](LICENSE).
 
 ## Acknowledgments
 
-- Next.js team for the framework
-- Clerk for authentication services
-- Google for the Generative AI API
-- Neon for the serverless PostgreSQL database
+- The [Next.js](https://nextjs.org/) team for the framework.
+- [Clerk](https://clerk.dev/) for providing authentication services.
+- [Google](https://cloud.google.com/ai/generative-ai) for their Generative AI API.
+- [Neon](https://neon.tech/) for the serverless PostgreSQL database services.
 
-```
+---
 
-This README provides a comprehensive overview of the Expense Tracker project, including its features, tech stack, setup instructions, and project structure. It's formatted properly for a GitHub README and includes all the essential information for someone looking to understand or contribute to the project.
+This version follows a cleaner structure with headings, code blocks, and a logical project outline. It ensures clarity for anyone looking to use, contribute to, or understand the project.
