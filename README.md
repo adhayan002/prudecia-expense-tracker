@@ -1,4 +1,3 @@
-Here's a structured and properly formatted version of your README for **Prudencia**, following the best practices for a GitHub README:
 
 ---
 
