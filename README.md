@@ -1,71 +1,110 @@
 ```markdown
-# Prudencia Expense Tracker
+# Prudencia
 
-Welcome to the Prudencia! This application is designed to help users manage their personal finances effectively, offering a range of features from budget management to AI-powered financial advice.
+Expense Tracker is a comprehensive financial management application built with Next.js, designed to help users track their expenses, manage budgets, and gain insights into their financial habits.
 
 ## Features
 
-### User Interface
+- **Dashboard Overview**: Visual summary of financial status
+- **Budget Management**: Create, edit, and track budgets
+- **Income Tracking**: Record and categorize income sources
+- **Expense Logging**: Add and categorize expenses
+- **Financial Insights**: AI-powered advice based on spending patterns
+- **Responsive Design**: Optimized for desktop and mobile devices
+- **Authentication**: Secure sign-up and sign-in functionality
 
-- **Responsive Design**: Ensures an optimal experience on various devices and screen sizes.
-- **Theming**: Supports light and dark themes for a personalized user experience.
+## Tech Stack
 
-### Dashboard
-
-- **Overview**: Displays a comprehensive view of your financial status, including budgets, incomes, and expenses.
-- **Visualization**: Includes bar charts and visual elements for better financial data comprehension.
-
-### Budget Management
-
-- **Create and Manage Budgets**: Easily create, edit, and delete budgets to manage finances.
-- **Budget Insights**: Provides alerts and insights into budget usage.
-
-### Income Tracking
-
-- **Add and View Incomes**: Record and view all income sources with detailed information.
-- **Income Details**: Access detailed data about each income entry.
-
-### Expense Tracking
-
-- **Expense Recording**: Add, edit, and delete expenses for accurate tracking.
-- **Categorization**: Organize expenses by categories for better analysis.
-- **Expense Analysis**: Analyze spending patterns to identify saving opportunities.
-
-### Financial Advice
-
-- **AI-Powered Advice**: Get personalized financial advice using Google Generative AI.
-- **Real-time Suggestions**: Receive real-time suggestions to optimize financial management.
-
-### Authentication
-
-- **Secure Login and Signup**: Safe and secure authentication mechanisms.
-- **Session Management**: Efficient user session management for a smooth experience.
-
-### Backend and Database
-
-- **Database Integration**: Utilizes Neon and Drizzle ORM for efficient database operations.
-- **API Integration**: Leverages external APIs for enhanced functionality.
+- **Frontend**: Next.js, React
+- **Styling**: Tailwind CSS
+- **Database**: PostgreSQL (via Neon)
+- **ORM**: Drizzle ORM
+- **Authentication**: Clerk
+- **AI Integration**: Google Generative AI (Gemini)
 
 ## Getting Started
 
-To explore the features, run the development server using one of the following commands:
+### Prerequisites
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+- Node.js (v14 or later)
+- npm or Yarn or Bun
 
-Open [http://localhost:3000](http://localhost:3000) in your browser to start using the Expense Tracker.
+### Installation
 
-## Deployment
+1. Clone the repository:
+   ```
+   git clone https://github.com/yourusername/expense-tracker.git
+   ```
 
-Deploy the application on the Vercel platform for an easy and efficient deployment process. For more details, refer to the [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying).
+2. Navigate to the project directory:
+   ```
+   cd expense-tracker
+   ```
 
----
+3. Install dependencies:
+   ```
+   npm install
+   # or
+   yarn install
+   # or
+   bun install
+   ```
 
-This README provides an overview of the Expense Tracker's key features, showcasing its capabilities in managing personal finances effectively.
+4. Set up environment variables:
+   Create a `.env.local` file in the root directory and add the following:
+   ```
+   NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=your_clerk_publishable_key
+   CLERK_SECRET_KEY=your_clerk_secret_key
+   NEXT_PUBLIC_CLERK_SIGN_IN_URL=/sign-in
+   NEXT_PUBLIC_CLERK_SIGN_UP_URL=/sign-up
+   NEXT_PUBLIC_GEMINI_API_KEY=your_gemini_api_key
+   NEXT_PUBLIC_DB=your_database_url
+   ```
+
+5. Run the development server:
+   ```
+   npm run dev
+   # or
+   yarn dev
+   # or
+   pnpm dev
+   # or
+   bun dev
+   ```
+
+6. Open [http://localhost:3000](http://localhost:3000) in your browser to see the application.
+
+## Project Structure
+
+The project follows a structured layout:
+
+- `src/app`: Contains the main application pages and routes
+- `src/components`: Reusable UI components
+- `src/lib`: Utility functions
+- `utils`: Database schema and configuration
+
+## Key Components
+
+- `Dashboard`: Main overview of user's financial status
+- `BudgetList`: Manages and displays user budgets
+- `IncomeList`: Tracks and shows income sources
+- `ExpenseListTable`: Lists and manages expenses
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## License
+
+This project is open source and available under the [MIT License](LICENSE).
+
+## Acknowledgments
+
+- Next.js team for the framework
+- Clerk for authentication services
+- Google for the Generative AI API
+- Neon for the serverless PostgreSQL database
+
 ```
+
+This README provides a comprehensive overview of the Expense Tracker project, including its features, tech stack, setup instructions, and project structure. It's formatted properly for a GitHub README and includes all the essential information for someone looking to understand or contribute to the project.
