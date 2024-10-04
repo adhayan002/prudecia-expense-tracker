@@ -1,7 +1,7 @@
 ```markdown
-# Expense Tracker
+# Prudencia Expense Tracker
 
-Welcome to the Expense Tracker project! This application is designed to help users manage their personal finances effectively, offering a range of features from budget management to AI-powered financial advice.
+Welcome to the Prudencia! This application is designed to help users manage their personal finances effectively, offering a range of features from budget management to AI-powered financial advice.
 
 ## Features
 
