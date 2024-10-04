@@ -32,16 +32,10 @@ Expense Tracker is a comprehensive financial management application built with N
 ### Installation
 
 1. Clone the repository:
-   git clone https://github.com/yourusername/expense-tracker.git
-   ```
-   
-   ```
+   git clone (https://github.com/adhayan002/prudecia-expense-tracker)
 
 2. Navigate to the project directory:
    cd expense-tracker
-   ```
-   
-   ```
 
 3. Install dependencies:
       npm install
@@ -49,9 +43,6 @@ Expense Tracker is a comprehensive financial management application built with N
       yarn install
       # or
       bun install
-   ```
-   
-   ```
 
 4. Set up environment variables:
    Create a `.env.local` file in the root directory and add the following:
@@ -61,9 +52,6 @@ Expense Tracker is a comprehensive financial management application built with N
       NEXT_PUBLIC_CLERK_SIGN_UP_URL=/sign-up
       NEXT_PUBLIC_GEMINI_API_KEY=your_gemini_api_key
       NEXT_PUBLIC_DB=your_database_url
-   ```
-   
-   ```
 
 5. Run the development server:
       npm run dev
@@ -73,9 +61,6 @@ Expense Tracker is a comprehensive financial management application built with N
       pnpm dev
       # or
       bun dev
-   ```
-  
-   ```
 
 6. Open [http://localhost:3000](http://localhost:3000) in your browser to see the application.
 
